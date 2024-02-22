@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: #363062;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header a {
+    color: #F99417;
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 30px;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+}
