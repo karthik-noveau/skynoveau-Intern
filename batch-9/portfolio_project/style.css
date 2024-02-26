@@ -19,3 +19,77 @@ body {
     font-family: sans-serif;
     letter-spacing: 0.5px;
 }
+
+.aboutUsContainer {
+    width: 100%;
+    height: 100%;
+    background-color: #363062;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutUsContainer img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 60px;
+}
+
+.aboutUsContainer h2 {
+    color: #f99417;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;    
+}
+
+.aboutUsContainer p {
+    color: white;
+    font-size: 22px;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+
+.fa-linkedin,
+.fa-facebook,
+.fa-instagram,
+.fa-youtube {
+    color: white;
+    margin: 5px;
+}
+
+.profileIconsContainer{
+    margin-top: 5px;
+}
+
+.waveImageBg{
+    width: 100%;
+}
+
+.skillsTitle{
+    text-align: center;
+    font-size: 32px;
+    font-family: sans-serif;
+    color: #f28703;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+}
+
+.skillsImagesContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.skillsImagesContainer img{
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 15px;
+}
