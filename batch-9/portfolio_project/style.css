@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -44,7 +45,7 @@ body {
     font-weight: 300;
     margin: 0;
     margin-top: 30px;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
 }
 
 .aboutUsContainer p {
@@ -63,15 +64,15 @@ body {
     margin: 5px;
 }
 
-.profileIconsContainer{
+.profileIconsContainer {
     margin-top: 5px;
 }
 
-.waveImageBg{
+.waveImageBg {
     width: 100%;
 }
 
-.skillsTitle{
+.skillsTitle {
     text-align: center;
     font-size: 32px;
     font-family: sans-serif;
@@ -79,17 +80,157 @@ body {
     letter-spacing: 1px;
     font-weight: 600;
 }
-}
 
-.skillsImagesContainer{
+.skillsImagesContainer {
     display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-.skillsImagesContainer img{
+.skillsImagesContainer img {
     width: 350px;
     height: 200px;
     object-fit: cover;
     border-radius: 15px;
     margin: 15px;
+}
+
+.educationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #363062;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+
+.educationContainer p {
+    text-align: center;
+    font-size: 32px;
+    font-family: sans-serif;
+    color: #f28703;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.educationContainer table {
+    border-collapse: collapse;
+    font-family: sans-serif;
+    width: 70%;
+}
+
+.educationContainer table tr:nth-of-type(1) {
+    background-color: #FFCF94;
+    color: #CE7200;
+    font-size: 20px;
+}
+
+.educationContainer table tr:nth-of-type(3) {
+    background-color: #ECECEC;
+}
+
+.educationContainer table tr:nth-of-type(2),
+.educationContainer table tr:nth-of-type(4) {
+    background-color: white;
+}
+
+.educationContainer table tr td {
+    padding: 20px;
+    border: none;
+}
+
+.educationContainer table tr:nth-of-type(1) td:nth-of-type(1),
+.educationContainer table tr:nth-of-type(1) td:nth-of-type(2) {
+    border-right: 1px solid #CE7200;
+}
+
+.educationContainer table tr:nth-of-type(2) td:nth-of-type(1),
+.educationContainer table tr:nth-of-type(2) td:nth-of-type(2) {
+    border-right: 1px solid #D1D1D1;
+}
+
+.educationContainer table tr:nth-of-type(3) td:nth-of-type(1),
+.educationContainer table tr:nth-of-type(3) td:nth-of-type(2) {
+    border-right: 1px solid #D1D1D1;
+}
+
+.educationContainer table tr:nth-of-type(4) td:nth-of-type(1),
+.educationContainer table tr:nth-of-type(4) td:nth-of-type(2) {
+    border-right: 1px solid #D1D1D1;
+}
+
+.footerSection {
+    background-color: #363062;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footerSection p {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+
+
+
+/* media quries */
+
+@media (max-width:425px) {
+    .skillsImagesContainer img {
+        width: 280px;
+        height: 149px;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 15px;
+        width: calc(98% - 25px);
+    }
+
+    .header a {
+        font-size: 22px;
+        margin-right: 0;
+    }
+
+    .footerSection p {
+        line-height: 27px;
+    }
+
+    .educationContainer table tr {
+        font-size: 13px;
+    }
+
+    .educationContainer table tr:nth-of-type(1) {
+        font-size: 14px;
+    }
+
+    .educationContainer table {
+        width: 95%;
+    }
+
+    .educationContainer p {
+        font-size: 22px;
+    }
+
+    .aboutUsContainer h2 {
+        font-size: 25px;
+    }
+
+    .aboutUsContainer img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .skillsTitle {
+        font-size: 22px;
+    }
 }
