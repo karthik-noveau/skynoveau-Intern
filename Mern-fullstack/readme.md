@@ -1,1 +1,1 @@
-# Fullstack course
+# Mern Fullstack course
